@@ -7,10 +7,10 @@ $(PKG)_BINARY:=$(SOURCE_DIR)/avahi-$($(PKG)_VERSION)/$(pkg)/.libs/$(pkg)
 $(PKG)_TARGET_BINARY:=$($(PKG)_DEST_DIR)/usr/bin/$(pkg)
 $(PKG)_AVAHI_DNSCONFD:=$(SOURCE_DIR)/avahi-$($(PKG)_VERSION)/avahi-dnsconfd/.libs/avahi-dnsconfd
 $(PKG)_TARGET_AVAHI_DNSCONFD:=$($(PKG)_DEST_DIR)/usr/bin/avahi-dnsconfd
-$(PKG)_LIB:=$(SOURCE_DIR)/avahi-$($(PKG)_VERSION)/avahi-common/.libs/libavahi-common.so.3.5.2
-$(PKG)_TARGET_LIB:=$($(PKG)_DEST_LIBDIR)/libavahi-common.so.3.5.2
-$(PKG)_LIB2:=$(SOURCE_DIR)/avahi-$($(PKG)_VERSION)/avahi-core/.libs/libavahi-core.so.7.0.0
-$(PKG)_TARGET_LIB2:=$($(PKG)_DEST_LIBDIR)/libavahi-core.so.7.0.0
+$(PKG)_LIB:=$(SOURCE_DIR)/avahi-$($(PKG)_VERSION)/avahi-common/.libs/libavahi-common.so.3.5.3
+$(PKG)_TARGET_LIB:=$($(PKG)_DEST_LIBDIR)/libavahi-common.so.3.5.3
+$(PKG)_LIB2:=$(SOURCE_DIR)/avahi-$($(PKG)_VERSION)/avahi-core/.libs/libavahi-core.so.7.0.2
+$(PKG)_TARGET_LIB2:=$($(PKG)_DEST_LIBDIR)/libavahi-core.so.7.0.2
 
 AVAHI_DAEMON_LIBS := -lpcap -lexpat -ldaemon -lintl
 $(PKG)_DEPENDS_ON := expat libpcap libdaemon gettext
