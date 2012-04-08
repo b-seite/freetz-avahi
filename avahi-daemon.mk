@@ -1,6 +1,6 @@
-$(call PKG_INIT_BIN, 0.6.28)
+$(call PKG_INIT_BIN, 0.6.31)
 $(PKG)_SOURCE:=avahi-$($(PKG)_VERSION).tar.gz
-$(PKG)_SOURCE_MD5:=d0143a5aa3265019072e53ab497818d0
+$(PKG)_SOURCE_MD5:=2f22745b8f7368ad5a0a3fddac343f2d
 $(PKG)_SITE:=http://avahi.org/download
 AVAHI_DAEMON_DIR:=$(SOURCE_DIR)/avahi-$($(PKG)_VERSION)
 $(PKG)_BINARY:=$(SOURCE_DIR)/avahi-$($(PKG)_VERSION)/$(pkg)/.libs/$(pkg)
